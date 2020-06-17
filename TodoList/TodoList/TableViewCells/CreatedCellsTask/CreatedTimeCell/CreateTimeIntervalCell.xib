@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="CreateTimeIntervalCell" customModule="TodoList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uq-Cu-oTo">
+                        <rect key="frame" x="16" y="16" width="30" height="30.5"/>
+                        <color key="backgroundColor" red="0.019379211589694023" green="0.73466330766677856" blue="0.98715168237686157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="DGm-Jf-Xt7"/>
+                            <constraint firstAttribute="height" constant="30" id="PFA-RY-81Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time task" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzT-js-SK3">
+                        <rect key="frame" x="62" y="12" width="91" height="18.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="nzd-xm-SMh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzw-Bx-yff">
+                        <rect key="frame" x="62" y="38.5" width="96.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="m7F-XG-cdt">
+                        <rect key="frame" x="100" y="67" width="201" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="BrH-hr-Brm"/>
+                        </constraints>
+                        <date key="date" timeIntervalSinceReferenceDate="611570346.40620506">
+                            <!--2020-05-19 08:39:06 +0000-->
+                        </date>
+                    </datePicker>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="m7F-XG-cdt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="100" id="4wJ-wS-YgB"/>
+                    <constraint firstItem="vzw-Bx-yff" firstAttribute="leading" secondItem="2uq-Cu-oTo" secondAttribute="trailing" constant="16" id="7mw-28-Ui0"/>
+                    <constraint firstItem="2uq-Cu-oTo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8eg-sd-L0m"/>
+                    <constraint firstAttribute="trailing" secondItem="m7F-XG-cdt" secondAttribute="trailing" constant="100" id="DgQ-FH-Oup"/>
+                    <constraint firstItem="vzw-Bx-yff" firstAttribute="top" secondItem="nzT-js-SK3" secondAttribute="bottom" constant="8" id="I78-wY-eX7"/>
+                    <constraint firstAttribute="bottom" secondItem="m7F-XG-cdt" secondAttribute="bottom" constant="3.5" id="fUX-kY-d3T"/>
+                    <constraint firstAttribute="bottom" secondItem="m7F-XG-cdt" secondAttribute="bottom" constant="55.5" id="ffI-k4-Ns0"/>
+                    <constraint firstItem="nzT-js-SK3" firstAttribute="leading" secondItem="2uq-Cu-oTo" secondAttribute="trailing" constant="16" id="oi3-9T-gGQ"/>
+                    <constraint firstItem="nzT-js-SK3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="pHT-ON-mOv"/>
+                    <constraint firstItem="m7F-XG-cdt" firstAttribute="top" secondItem="vzw-Bx-yff" secondAttribute="bottom" constant="8" id="pWy-kA-Txx"/>
+                    <constraint firstItem="2uq-Cu-oTo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="rbx-Ys-Ywh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="heightConstraintPicker" destination="BrH-hr-Brm" id="SvT-pn-Dbx"/>
+                <outlet property="numberCellLabel" destination="2uq-Cu-oTo" id="0Pr-qS-2ot"/>
+                <outlet property="timeTaskDatePicker" destination="m7F-XG-cdt" id="QkC-q7-Vr8"/>
+            </connections>
+            <point key="canvasLocation" x="196.37681159420291" y="102.45535714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
